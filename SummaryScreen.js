@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, View, StyleSheet ,TouchableOpacity,Image} from 'react-native';
-import db from '../config';
+import db from './config';
 
 
 class SummaryScreen extends React.Component{
@@ -91,7 +91,7 @@ class SummaryScreen extends React.Component{
                 onPress={() => {
                   this.props.navigation.navigate('HomeScreen');
                 }}><Image style={{ width: 150, height: 70,marginTop:10}}
-                      source={require('../assets/back.jpg')}/>
+                      source={require('./back.jpg')}/>
               </TouchableOpacity>
         </View>
       </View>
