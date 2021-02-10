@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Button,Image } from 'react-native';
-import db from '../config';
+import db from './config';
 
 const image = {uri:'https://i.pinimg.com/564x/21/f4/74/21f47494d04502843bd02da78e4b5b47.jpg'}
 
@@ -132,7 +132,7 @@ export default class HomeScreen extends React.Component {
                   this.props.navigation.navigate('SummaryScreen');
                 }}>
                 <Image style={{ width: 350, height: 70}}
-                      source={require('../assets/light-green-floral-background-vector-image_csp46898770.jpg')}/>
+                      source={require('./light-green-floral-background-vector-image_csp46898770.jpg')}/>
               </TouchableOpacity>
             </View>
           </View>
